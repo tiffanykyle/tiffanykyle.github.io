@@ -19,8 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg border-bottom border-white" id="topnav">
+<nav class="navbar navbar-center navbar-expand-lg text-center" id="topnav">
     <a class="navbar-brand" href=./index.html id="brand">Tiffany & Kyle</a>
+    <div id="navcd-inline">
+
+    </div>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
             data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +51,11 @@
             </li>
         </ul>
     </div>
+</nav>
+<nav class="navbar navbar-center navbar-expand-lg border-bottom border-white text-center" id="topnavcd">
+    <div id="navcd">
 
+    </div>
 </nav>
 <img src="./images/top.png" onclick="topFunction()" id="topbtn"/>
 <div id="home" class="d-flex justify-content-center align-items-center">
@@ -57,8 +64,8 @@
         <a class="nav-link rsvpbtn" href="./rsvp_en.html" style="font-size:1.5rem">&nbspRSVP&nbsp</a>
     </div>
 </div>
-<div class="container banner">
-    WORDS
+<div class="container banner" id="bannerword">
+    We request the honor of your presence to our wedding.
 </div>
 <div>
     <div class="row text-center justify-content-center" id="events">
@@ -76,10 +83,13 @@
                                 4:00PM
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                                Our wedding ceremony will take place at St. John's Cathedral. We invite you to share
+                                with us a celebration of love in front of God.
+
                             </p>
-                            <a href="https://goo.gl/maps/7ipzErwgf6UJggzq6" class="btn"><img src="images/location.png" class="map_icon" alt="maplink"></a>
+                            <a href="https://goo.gl/maps/7ipzErwgf6UJggzq6" class="btn"><img src="images/location.png"
+                                                                                             class="map_icon"
+                                                                                             alt="maplink"></a>
                         </div>
                     </div>
 
@@ -93,11 +103,13 @@
                                 6:00PM
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo.
-                                Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur
-                                accusantium maxime molestiae sunt ipsa.
+                                Join us at the Kowloon Shangri-La Hotel for cocktails, photos and games. Snacks and
+                                drinks will be provided.
+
                             </p>
-                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png" class="map_icon" alt="maplink"></a>
+                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png"
+                                                                                             class="map_icon"
+                                                                                             alt="maplink"></a>
                         </div>
                     </div>
 
@@ -108,14 +120,14 @@
                         <div class="timeline-content">
                             <h2>Photo</h2>
                             <p>
-                                6:00PM
+                                6:30PM
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo.
-                                Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur
-                                accusantium maxime molestiae sunt ipsa.</a>
+                                If you have not taken any photos with the newly married couple. Here is the time.
                             </p>
-                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png" class="map_icon" alt="maplink"></a>
+                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png"
+                                                                                             class="map_icon"
+                                                                                             alt="maplink"></a>
                         </div>
                     </div>
 
@@ -124,44 +136,20 @@
                             <img src="images/dinner.png" class="inline_icon" alt="dinner" style="padding-top: 12px">
                         </div>
                         <div class="timeline-content right">
-                            <h2>Dinner</h2>
+                            <h2>Reception</h2>
                             <p>
-                                6:00PM
+                                8:00PM
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo.
-                                Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur
-                                accusantium maxime molestiae sunt ipsa.
+                                Enjoy the 6 courses dinner at the Grand Ballroom and celebrate the beginning our next
+                                stage of life with us.
+
                             </p>
-                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png" class="map_icon" alt="maplink"></a>
+                            <a href="https://goo.gl/maps/wYtgx9HiguaYeS9R9" class="btn"><img src="images/location.png"
+                                                                                             class="map_icon"
+                                                                                             alt="maplink"></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 d-flex right2 text-center" id="topr">
-            <div class="container animated fadeIn" id="countdownmain" data-aos="fade-up">
-                <h3 class="title" style="font-family: 'NotoSans', cursive;">The Wedding Day</h3>
-                <div id="counter">
-                    <table border = "0" id="cdtable">
-                        <tr>
-                            <td id="countdownday" style="text-align:right;"></td>
-                            <td id="daytext" style="text-align:left;">&nbspDAY</td>
-                        </tr>
-                        <tr>
-                            <td id="countdownhr" style="text-align:right;"></td>
-                            <td id="hrtext" style="text-align:left;">&nbspHR</td>
-                        </tr>
-                        <tr>
-                            <td id="countdownmin" style="text-align:right;"></td>
-                            <td id="mintext" style="text-align:left;">&nbspMIN</td>
-                        </tr>
-                        <tr>
-                            <td id="countdowns" style="text-align:right;"></td>
-                            <td id="stext" style="text-align:left;">&nbspS</td>
-                        </tr>
-                    </table>
-
                 </div>
             </div>
         </div>

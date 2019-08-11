@@ -37,18 +37,18 @@ var x = setInterval(function() {
     ss = seconds.toString();
 
 
-    document.getElementById("countdownday").innerHTML = sday;
-    document.getElementById("countdownhr").innerHTML = shours;
-    document.getElementById("countdownmin").innerHTML = smin;
-    document.getElementById("countdowns").innerHTML = ss;
+    document.getElementById("navcd").innerHTML = +sday +'DAYS TILL THE BIG DAY';
+    document.getElementById("navcd-inline").innerHTML = "The Big Day is In: " + "<br>" + sday + 'DAY ' + shours + "HR " + smin + "MIN " + ss + "S";
 
     // If the count down is over, write some text
     if ((distance < 0) && (-(1000*60*60*24)< distance)){
         clearInterval(x);
-        document.getElementById("counter").innerHTML = "The Wedding is today!";
+        document.getElementById("navcd").innerHTML = "The Big Day is today!";
+        document.getElementById("navcd-inline").innerHTML = "The Big Day is today!";
     }
     else if (distance < -(1000*60*60*24)){
         clearInterval(x);
-        document.getElementById("counter").innerHTML = "<p>The Wedding day has passed.</p>" + "<p>Thank You for Joining us.</p>";
+        document.getElementById("navcd").innerHTML = "<p>The Wedding day has passed.</p>" + "<p>Thank You for Joining us.</p>";
+        document.getElementById("navcd-inline").innerHTML = "<p>The Wedding day has passed.</p>" + "<p>Thank You for Joining us.</p>";
     }
 }, 1000);
