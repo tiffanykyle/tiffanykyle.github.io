@@ -37,8 +37,8 @@ var x = setInterval(function() {
     ss = seconds.toString();
 
 
-    document.getElementById("navcd").innerHTML = +sday +'DAYS TILL THE BIG DAY';
-    document.getElementById("navcd-inline").innerHTML = "The Big Day is In: " + "<br>" + sday + 'DAY ' + shours + "HR " + smin + "MIN " + ss + "S";
+    document.getElementById("navcd").innerHTML = +sday +'Days Till The Big Day';
+    document.getElementById("navcd-inline").innerHTML = "The Big Day is In: " + "<br>" + sday + 'Day ' + shours + "Hr " + smin + "Min " + ss + "S";
 
     // If the count down is over, write some text
     if ((distance < 0) && (-(1000*60*60*24)< distance)){
