@@ -31,7 +31,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 </head>
-<body>
+<body onload="rsvp_end()">
 <nav class="navbar navbar-expand-lg border-bottom border-white" id="topnav">
 
     <a class="navbar-brand" href=./index.html id="brand">Tiffany & Kyle</a>
@@ -330,7 +330,10 @@
         document.getElementById("sb").hidden = false;
         document.getElementById("usb").hidden = true;
     }
-
+    function rsvp_end(){
+        alert("The online R.S.V.P is closed, please contact us through Whatsapp instead, thank you for joining us.");
+        window.location.replace("./index.html");
+    }
 </script>
 </body>
 

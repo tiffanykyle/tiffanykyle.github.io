@@ -42,7 +42,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#photos">圖片</a>
             </li>
-            <a class="nav-link rsvpbtn" href="./rsvp_ch.html">&nbspRSVP&nbsp</a>
+            <a class="nav-link rsvpbtn" href="https://api.whatsapp.com/send?phone=85252264460" onclick="rsvp_end()">&nbspRSVP&nbsp</a>
             <li class="nav-item nav-icon">
                 <a href="https://api.whatsapp.com/send?phone=85252264460">
                     <img alt="whatsapp"
@@ -67,7 +67,7 @@
 <div id="home" class="d-flex justify-content-center align-items-center">
     <div class="text-center align-items-center justify-content-center animated fadeInDown maintext">
         <h3 class="disable-select maindate">2019年 11月 23日 • 香港</h3>
-        <a class="nav-link rsvpbtn" href="./rsvp_ch.html" style="font-size:1.5rem">&nbspRSVP&nbsp</a>
+        <a class="nav-link rsvpbtn" href="https://api.whatsapp.com/send?phone=85252264460" onclick="rsvp_end()" style="font-size:1.5rem">&nbspRSVP&nbsp</a>
     </div>
 </div>
 <div class="banner text-center justify-content-center">
@@ -195,7 +195,9 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
-
+    function rsvp_end() {
+        alert("The online R.S.V.P is closed, please contact us through Whatsapp instead, thank you for joining us.");
+    }
 </script>
 </body>
 </html>

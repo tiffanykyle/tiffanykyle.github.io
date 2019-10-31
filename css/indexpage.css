@@ -20,6 +20,11 @@ tr{
     vertical-align: middle;
 }
 
+#pdf_iframe{
+    margin-top: 70px;
+    height: 85vh;
+    width: 90%;
+}
 #brand{
     font-family: 'BaskervilleOldFacSCD', cursive;
     font-weight: 400;

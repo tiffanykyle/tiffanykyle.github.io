@@ -31,7 +31,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 </head>
-<body>
+<body onload="rsvp_end()">
 <nav class="navbar navbar-expand-md border-bottom border-white" id="topnav">
 
     <a class="navbar-brand" href=./index_ch.html id="brand">Tiffany & Kyle</a>
@@ -330,6 +330,10 @@
         document.getElementById("guest10b").checked = false;
         document.getElementById("sb").hidden = false;
         document.getElementById("usb").hidden = true;
+    }
+    function rsvp_end(){
+        alert("The R.S.V.P period has ended, please contact us through Whatsapp for more information, thank you for joining us.");
+        window.location.replace("./index_ch.html");
     }
 </script>
 </body>
